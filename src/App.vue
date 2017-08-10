@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <carousel></carousel>    
-    <chart-tabs></chart-tabs>
+    <section class="section">
+      <div class="container">
+        <carousel></carousel>
+        <chart-tabs></chart-tabs>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -19,4 +23,5 @@ export default {
 </script>
 
 <style>
+
 </style>
