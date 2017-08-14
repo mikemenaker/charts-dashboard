@@ -1,7 +1,72 @@
 {
     "charts": [
         {
-            "title" : "My New Chart",
+            "title" : "My New Pie Chart",
+            "type" : "pie",
+            "data": {
+                "labels": [
+                    "Sleeping",
+                    "Designing",
+                    "Coding",
+                    "Cycling"
+                ],
+                "datasets": [
+                    {
+                        "data": [
+                            20,
+                            40,
+                            5,
+                            35
+                        ],
+                        "backgroundColor": [
+                            "#1fc8db",
+                            "#fce473",
+                            "#42afe3",
+                            "#ed6c63",
+                            "#97cd76"
+                        ]
+                    }
+                ]
+            },
+            "options": {
+                "segmentShowStroke": false
+            }
+        },
+        {
+            "title" : "My New Doughnut Chart",
+            "type" : "doughnut",
+            "data": {
+                "labels": [
+                    "Sleeping",
+                    "Designing",
+                    "Coding",
+                    "Cycling"
+                ],
+                "datasets": [
+                    {
+                        "data": [
+                            20,
+                            40,
+                            5,
+                            35
+                        ],
+                        "backgroundColor": [
+                            "#1fc8db",
+                            "#fce473",
+                            "#42afe3",
+                            "#ed6c63",
+                            "#97cd76"
+                        ]
+                    }
+                ]
+            },
+            "options": {
+                "segmentShowStroke": false
+            }
+        },
+        {
+            "title" : "My New Polar Area Chart",
+            "type" : "polarArea",
             "data": {
                 "labels": [
                     "Sleeping",
