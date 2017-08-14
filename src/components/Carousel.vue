@@ -1,17 +1,14 @@
 <template>
-    <main>
+    <main v-if="charts.length > 0">
         <agile>
-            <div class="slide">
-                <h3>Chart 1</h3>
+            <div class="slide" v-for="chart in charts"  :key="chart.title">
+                <h3>{{chart.title}}</h3>
                 <div class="columns">
-                    <div class="column is-4 is-offset-4">                        
-                            <chart :type="'pie'" :height="100" :data="data" :options="options"></chart>                        
+                    <div class="column is-4 is-offset-4">
+                        <chart :type="chart.type" :height="100" :data="chart.data" :options="chart.options"></chart>
                     </div>
                 </div>
             </div>            
-            <div class="slide">
-                <h3>Chart 2</h3>
-            </div>
         </agile>
     </main>
 </template>
@@ -24,24 +21,11 @@ export default {
     components: {
         Chart
     },
-    data() {
-        return {
-            data: {
-                labels: ['Sleeping', 'Designing', 'Coding', 'Cycling'],
-                datasets: [{
-                    data: [20, 40, 5, 35],
-                    backgroundColor: [
-                        '#1fc8db',
-                        '#fce473',
-                        '#42afe3',
-                        '#ed6c63',
-                        '#97cd76'
-                    ]
-                }]
-            },
-            options: {
-                segmentShowStroke: false
-            }
+    props: {
+        charts: {
+            type: Array,
+            required: true,
+            default: () => ([])
         }
     }
 }
