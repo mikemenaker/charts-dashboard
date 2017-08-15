@@ -1,14 +1,14 @@
 <template>
-    <main v-if="charts.length > 0">
-        <agile>
-            <div class="slide" v-for="chart in charts"  :key="chart.title">
-                <h3>{{chart.title}}</h3>
+    <main v-if="tabs.length > 0">
+        <agile :speed="750" :timing="'linear'" :infinite="true" :fade="true" :autoplay="true" :pauseOnHover="false">
+            <div style="height:100px" class="slide" v-for="tab in tabs"  :key="tab.name">
+                <h3 class="has-text-centered">{{tab.charts[0].title}}</h3>
                 <div class="columns">
                     <div class="column is-4 is-offset-4">
-                        <chart :type="chart.type" :height="100" :data="chart.data" :options="chart.options"></chart>
-                    </div>
-                </div>
-            </div>            
+                        <chart :type="tab.charts[0].type" :height="100" :data="tab.charts[0].data" :options="tab.charts[0].options"></chart>                        
+                    </div>                    
+                </div>                
+            </div>                    
         </agile>
     </main>
 </template>
@@ -22,7 +22,7 @@ export default {
         Chart
     },
     props: {
-        charts: {
+        tabs: {
             type: Array,
             required: true,
             default: () => ([])
@@ -32,5 +32,11 @@ export default {
 </script>
 
 <style>
+.agile__arrow {
+    background-color: transparent;
+}
 
+.agile__dots {
+    margin-top: 30px;
+}
 </style>

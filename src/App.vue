@@ -2,8 +2,8 @@
   <div id="app">
     <section class="section">
       <div class="container">
-        <carousel :charts="charts"></carousel>
-        <chart-tabs :charts="charts"></chart-tabs>
+        <carousel :tabs="tabs"></carousel>
+        <chart-tabs :tabs="tabs"></chart-tabs>
       </div>
     </section>
   </div>
@@ -21,15 +21,14 @@ export default {
     Carousel
   },
   data: () => ({
-    charts: []
+    tabs: []
   }),
   async created() {
     const response = await axios.get("https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/data.json")
-    this.charts = response.data.charts
+    this.tabs = response.data.tabs
   }
 }
 </script>
 
 <style>
-
 </style>

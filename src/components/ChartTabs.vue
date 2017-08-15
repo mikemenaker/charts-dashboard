@@ -1,10 +1,11 @@
 <template>
-  <div v-if="charts.length > 0">
+  <div style="background-color: whitesmoke;" v-if="tabs.length > 0">
     <tabs animation="slide" :only-fade="false">
-      <tab-pane v-for="chart in charts" :label="chart.title" :key="chart.title">
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-4">
+      <tab-pane v-for="tab in tabs" :label="tab.name" :key="tab.name">
+        <div class="tile is-ancestor" >
+          <div v-for="chart in tab.charts" class="tile is-parent is-4" :key="chart.title">
             <article class="tile is-child box">
+              <h4 class="title">{{chart.title}}</h4>
               <chart :type="chart.type" :data="chart.data" :options="chart.options"></chart>
             </article>
           </div>
@@ -26,7 +27,7 @@ export default {
     Chart
   },
   props: {
-    charts: {
+    tabs: {
       type: Array,
       required: true,
       default: () => ([])
@@ -36,5 +37,7 @@ export default {
 </script>
 
 <style>
-
+.tab-list {
+  background-color: white;
+}
 </style>
