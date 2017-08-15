@@ -2,7 +2,7 @@
     <main v-if="tabs.length > 0">
         <agile :speed="750" :timing="'linear'" :infinite="true" :fade="true" :autoplay="true" :pauseOnHover="false">
             <div style="height:100px" class="slide" v-for="tab in tabs"  :key="tab.name">
-                <h3 class="has-text-centered">{{tab.charts[0].title}}</h3>
+                <h3 class="has-text-centered">{{tab.name}} - {{tab.charts[0].title}}</h3>
                 <div class="columns">
                     <div class="column is-4 is-offset-4">
                         <chart :type="tab.charts[0].type" :height="100" :data="tab.charts[0].data" :options="tab.charts[0].options"></chart>                        
