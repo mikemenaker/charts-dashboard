@@ -1,16 +1,27 @@
 <template>
-  <div style="background-color: whitesmoke;" v-if="tabs.length > 0">
+  <div v-if="tabs.length > 0">
     <tabs animation="slide" :only-fade="false">
       <tab-pane v-for="tab in tabs" :label="tab.name" :key="tab.name">
-        <div class="tile is-ancestor" >
+        <div class="tile">
           <div v-for="chart in tab.charts" class="tile is-parent is-4" :key="chart.title">
-            <article class="tile is-child box">
-              <h4 class="title">{{chart.title}}</h4>
-              <chart :type="chart.type" :data="chart.data" :options="chart.options"></chart>
+            <article class="tile is-child">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">{{chart.title}}</p>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <chart :type="chart.type" :data="chart.data" :options="chart.options"></chart>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  Last updated on 1/3/17 1:33
+                </footer>
+              </div>
             </article>
           </div>
         </div>
-      </tab-pane>      
+      </tab-pane>
     </tabs>
   </div>
 </template>
@@ -37,7 +48,4 @@ export default {
 </script>
 
 <style>
-.tab-list {
-  background-color: white;
-}
 </style>
