@@ -6,6 +6,8 @@
                 {
                     "title": "My New Pie Chart",
                     "type": "pie",
+                    "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePieChart1.json",
+                    "updateInterval":30,
                     "data": {
                         "labels": [
                             "Sleeping",
@@ -14,13 +16,7 @@
                             "Cycling"
                         ],
                         "datasets": [
-                            {
-                                "data": [
-                                    20,
-                                    40,
-                                    5,
-                                    35
-                                ],
+                            {                                
                                 "backgroundColor": [
                                     "#1fc8db",
                                     "#fce473",
@@ -38,6 +34,8 @@
                 {
                     "title": "My New Doughnut Chart",
                     "type": "doughnut",
+                    "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourceDoughnutChart1.json",
+                    "updateInterval":30,
                     "data": {
                         "labels": [
                             "Sleeping",
@@ -47,12 +45,6 @@
                         ],
                         "datasets": [
                             {
-                                "data": [
-                                    20,
-                                    40,
-                                    5,
-                                    35
-                                ],
                                 "backgroundColor": [
                                     "#1fc8db",
                                     "#fce473",
@@ -70,6 +62,8 @@
                 {
                     "title": "My New Polar Area Chart",
                     "type": "polarArea",
+                    "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePolarChart1.json",
+                    "updateInterval":30,
                     "data": {
                         "labels": [
                             "Sleeping",
@@ -79,12 +73,6 @@
                         ],
                         "datasets": [
                             {
-                                "data": [
-                                    20,
-                                    40,
-                                    5,
-                                    35
-                                ],
                                 "backgroundColor": [
                                     "#1fc8db",
                                     "#fce473",
@@ -107,6 +95,8 @@
                 {
                     "title": "My New Doughnut Chart",
                     "type": "doughnut",
+                    "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourceDoughnutChart2.json",
+                    "updateInterval":30,
                     "data": {
                         "labels": [
                             "Sleeping",
@@ -116,12 +106,6 @@
                         ],
                         "datasets": [
                             {
-                                "data": [
-                                    20,
-                                    40,
-                                    5,
-                                    35
-                                ],
                                 "backgroundColor": [
                                     "#1fc8db",
                                     "#fce473",
@@ -139,6 +123,8 @@
                 {
                     "title": "My New Polar Area Chart",
                     "type": "polarArea",
+                    "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePolarChart2.json",
+                    "updateInterval":30,
                     "data": {
                         "labels": [
                             "Sleeping",
@@ -148,12 +134,6 @@
                         ],
                         "datasets": [
                             {
-                                "data": [
-                                    20,
-                                    40,
-                                    5,
-                                    35
-                                ],
                                 "backgroundColor": [
                                     "#1fc8db",
                                     "#fce473",
