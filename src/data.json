@@ -4,149 +4,128 @@
             "name": "Data Tab 1",
             "charts": [
                 {
-                    "title": "My New Pie Chart",
+                    "title": "Pie 1",
                     "type": "pie",
                     "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePieChart1.json",
-                    "updateInterval":30,
+                    "updateInterval": 30,
                     "data": {
                         "labels": [
                             "Sleeping",
                             "Designing",
                             "Coding",
                             "Cycling"
-                        ],
-                        "datasets": [
-                            {                                
-                                "backgroundColor": [
-                                    "#1fc8db",
-                                    "#fce473",
-                                    "#42afe3",
-                                    "#ed6c63",
-                                    "#97cd76"
-                                ]
-                            }
                         ]
                     },
-                    "options": {
-                        "segmentShowStroke": false
-                    }
+                    "options": {}
                 },
                 {
-                    "title": "My New Doughnut Chart",
+                    "title": "Doughnut 1",
                     "type": "doughnut",
                     "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourceDoughnutChart1.json",
-                    "updateInterval":30,
+                    "updateInterval": 30,
                     "data": {
                         "labels": [
                             "Sleeping",
                             "Designing",
                             "Coding",
                             "Cycling"
-                        ],
-                        "datasets": [
-                            {
-                                "backgroundColor": [
-                                    "#1fc8db",
-                                    "#fce473",
-                                    "#42afe3",
-                                    "#ed6c63",
-                                    "#97cd76"
-                                ]
-                            }
                         ]
                     },
-                    "options": {
-                        "segmentShowStroke": false
-                    }
+                    "options": {}
                 },
                 {
-                    "title": "My New Polar Area Chart",
-                    "type": "polarArea",
+                    "title": "Bar 1",
+                    "type": "bar",
                     "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePolarChart1.json",
-                    "updateInterval":30,
+                    "updateInterval": 30,
                     "data": {
                         "labels": [
                             "Sleeping",
                             "Designing",
                             "Coding",
                             "Cycling"
-                        ],
-                        "datasets": [
-                            {
-                                "backgroundColor": [
-                                    "#1fc8db",
-                                    "#fce473",
-                                    "#42afe3",
-                                    "#ed6c63",
-                                    "#97cd76"
-                                ]
-                            }
                         ]
                     },
-                    "options": {
-                        "segmentShowStroke": false
+                    "options": {}
+                },
+                {
+                    "title": "Line 1",
+                    "type": "bar",
+                    "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePolarChart1.json",
+                    "updateInterval": 30,
+                    "data": {
+                        "labels": [
+                            "Sleeping",
+                            "Designing",
+                            "Coding",
+                            "Cycling"
+                        ]
                     }
                 }
             ]
         },
         {
             "name": "Data Tab 2",
-            "charts": [                
+            "charts": [
                 {
                     "title": "My New Doughnut Chart",
                     "type": "doughnut",
                     "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourceDoughnutChart2.json",
-                    "updateInterval":30,
+                    "updateInterval": 30,
                     "data": {
                         "labels": [
                             "Sleeping",
                             "Designing",
                             "Coding",
                             "Cycling"
-                        ],
-                        "datasets": [
-                            {
-                                "backgroundColor": [
-                                    "#1fc8db",
-                                    "#fce473",
-                                    "#42afe3",
-                                    "#ed6c63",
-                                    "#97cd76"
-                                ]
-                            }
                         ]
                     },
-                    "options": {
-                        "segmentShowStroke": false
-                    }
+                    "options": {}
                 },
                 {
                     "title": "My New Polar Area Chart",
-                    "type": "polarArea",
+                    "type": "polar-area",
                     "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePolarChart2.json",
-                    "updateInterval":30,
+                    "updateInterval": 30,
                     "data": {
                         "labels": [
                             "Sleeping",
                             "Designing",
                             "Coding",
                             "Cycling"
-                        ],
-                        "datasets": [
-                            {
-                                "backgroundColor": [
-                                    "#1fc8db",
-                                    "#fce473",
-                                    "#42afe3",
-                                    "#ed6c63",
-                                    "#97cd76"
-                                ]
-                            }
                         ]
                     },
-                    "options": {
-                        "segmentShowStroke": false
-                    }
+                    "options": {}
+                },
+                {
+                    "title": "Bar 2",
+                    "type": "bar",
+                    "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePolarChart1.json",
+                    "updateInterval": 30,
+                    "data": {
+                        "labels": [
+                            "Sleeping",
+                            "Designing",
+                            "Coding",
+                            "Cycling"
+                        ]
+                    },
+                    "options": {}
+                },
+                {
+                    "title": "Line 2",
+                    "type": "bar",
+                    "dataSource": "https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/dataSourcePolarChart1.json",
+                    "updateInterval": 30,
+                    "data": {
+                        "labels": [
+                            "Sleeping",
+                            "Designing",
+                            "Coding",
+                            "Cycling"
+                        ]
+                    },
+                    "options": {}
                 }
             ]
         }

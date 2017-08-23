@@ -11,7 +11,7 @@
                 </header>
                 <div class="card-content">
                   <div class="content">
-                    <chart :type="chart.type" :data="chart.data" :options="chart.options"></chart>
+                    <dyna-chart :type="chart.type" :dataSource="chart.dataSource" :root-data="chart.data" :options="chart.options"></dyna-chart>
                   </div>
                 </div>
                 <footer class="card-footer">
@@ -28,14 +28,14 @@
 
 <script>
 import { Tabs, TabPane } from 'vue-bulma-tabs'
-import Chart from 'vue-bulma-chartjs'
+import DynaChart from '../components/DynamicChart'
 
 export default {
   name: 'chart-tabs',
   components: {
     Tabs,
     TabPane,
-    Chart
+    DynaChart
   },
   props: {
     tabs: {
@@ -48,4 +48,5 @@ export default {
 </script>
 
 <style>
+
 </style>
