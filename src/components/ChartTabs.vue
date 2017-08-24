@@ -2,22 +2,11 @@
   <div v-if="tabs.length > 0">
     <tabs animation="slide" :only-fade="false">
       <tab-pane v-for="tab in tabs" :label="tab.name" :key="tab.name">
-        <div class="tile " style="flex-wrap: wrap;">
-          <div v-for="chart in tab.charts" class="tile is-parent is-4" :key="chart.title">
+        <p v-if="tab.description" style="margin-left:10px">{{tab.description}}</p>
+        <div class="tile " style="flex-wrap: wrap;">          
+          <div v-for="dataItem in tab.data" class="tile is-parent is-4" :key="dataItem.title">
             <article class="tile is-child">
-              <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">{{chart.title}}</p>
-                </header>
-                <div class="card-content">
-                  <div class="content">
-                    <dyna-chart :type="chart.type" :dataSource="chart.dataSource" :root-data="chart.data" :options="chart.options"></dyna-chart>
-                  </div>
-                </div>
-                <footer class="card-footer">
-                  Last updated on 1/3/17 1:33
-                </footer>
-              </div>
+              <data-item :item="dataItem"></data-item>
             </article>
           </div>
         </div>
@@ -28,14 +17,14 @@
 
 <script>
 import { Tabs, TabPane } from 'vue-bulma-tabs'
-import DynaChart from '../components/DynamicChart'
+import DataItem from '../components/DataItem'
 
 export default {
   name: 'chart-tabs',
   components: {
     Tabs,
     TabPane,
-    DynaChart
+    DataItem
   },
   props: {
     tabs: {

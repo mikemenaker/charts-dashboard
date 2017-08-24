@@ -38,7 +38,7 @@
     </nav>
     <section class="section">
       <div class="container">
-        <carousel :tabs="tabs"></carousel>
+        <carousel v-if="carousel" :dataItems="carousel"></carousel>
         <chart-tabs :tabs="tabs"></chart-tabs>
       </div>
     </section>
@@ -57,12 +57,16 @@ export default {
     Carousel
   },
   data: () => ({
-    tabs: []
+    tabs: [],
+    carousel: null
   }),
   async created() {
     const response = await axios.get("https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/data.json")
 
     this.tabs = response.data.tabs;
+    if (response.data.hasOwnProperty("carousel")) {
+      this.carousel = response.data.carousel;
+    }
   }
 }
 </script>
