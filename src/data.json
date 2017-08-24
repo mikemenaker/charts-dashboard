@@ -1,8 +1,40 @@
 {
+    "carousel": [
+        {
+            "title": "Pie 1",
+            "type": "pie",
+            "dataSource": "https://datasource",
+            "updateInterval": 30,
+            "data": {
+                "labels": [
+                    "Pie Label 1",
+                    "Pie Label 2",
+                    "Pie Label 3",
+                    "Pie Label 4",
+                    "Pie Label 5"
+                ]
+            },
+            "options": {}
+        },
+        {
+            "title": "Doughnut 1",
+            "type": "doughnut",
+            "dataSource": "https://datasource",
+            "updateInterval": 30,
+            "data": {
+                "labels": [
+                    "Doughnut Label 1",
+                    "Doughnut Label 2",
+                    "Doughnut Label 3"
+                ]
+            },
+            "options": {}
+        }
+    ],
     "tabs": [
         {
             "name": "Data Tab 1",
-            "charts": [
+            "data": [
                 {
                     "title": "Pie 1",
                     "type": "pie",
@@ -74,11 +106,14 @@
         },
         {
             "name": "Data Tab 2",
-            "charts": [
+            "description": "I'm a description",
+            "data": [
                 {
                     "title": "Doughnut 2",
+                    "description": "I'm a description",
                     "type": "doughnut",
                     "dataSource": "https://datasource",
+                    
                     "updateInterval": 30,
                     "data": {
                         "labels": [
@@ -92,6 +127,7 @@
                 },
                 {
                     "title": "Polar 1",
+                    "description": "I'm a description",
                     "type": "polar-area",
                     "dataSource": "https://datasource",
                     "updateInterval": 30,
@@ -107,6 +143,7 @@
                 },
                 {
                     "title": "Bar 2",
+                    "description": "I'm a description",
                     "type": "bar",
                     "dataSource": "https://datasource",
                     "updateInterval": 30,
@@ -123,6 +160,7 @@
                 },
                 {
                     "title": "Line 2",
+                    "description": "I'm a description",
                     "type": "line",
                     "dataSource": "https://datasource",
                     "updateInterval": 30,
@@ -143,9 +181,10 @@
         },
         {
             "name": "Data Tab 3",
-            "charts": [
+            "data": [
                 {
                     "title": "Pie 2",
+                    "description": "I'm a description",
                     "type": "pie",
                     "dataSource": "https://datasource",
                     "updateInterval": 30,
@@ -162,6 +201,7 @@
                 },
                 {
                     "title": "Doughnut 3",
+                    "description": "I'm a description",
                     "type": "doughnut",
                     "dataSource": "https://datasource",
                     "updateInterval": 30,
