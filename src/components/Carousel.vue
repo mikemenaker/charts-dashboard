@@ -1,10 +1,10 @@
 <template>
     <main v-if="dataItems.length > 0">
         <agile :speed="750" :timing="'linear'" :infinite="true" :autoplay="true" :pauseOnHover="false">
-            <div class="slide" v-for="dataItem in dataItems" :key="dataItem.name">                
+            <div class="slide" v-for="dataItem in dataItems" :key="dataItem.name">
                 <div class="columns">
-                    <div class="column is-4 is-offset-4">                        
-                       <data-item :item="dataItem"></data-item>
+                    <div class="column is-4 is-offset-4">
+                        <data-item :item="dataItem"></data-item>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@ export default {
             required: true,
             default: () => ([])
         }
-    },    
+    },
 }
 </script>
 

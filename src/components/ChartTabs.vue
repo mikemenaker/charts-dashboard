@@ -3,7 +3,7 @@
     <tabs animation="slide" :only-fade="false">
       <tab-pane v-for="tab in tabs" :label="tab.name" :key="tab.name">
         <p v-if="tab.description" style="margin-left:10px">{{tab.description}}</p>
-        <div class="tile " style="flex-wrap: wrap;">          
+        <div class="tile " style="flex-wrap: wrap;">
           <div v-for="dataItem in tab.data" class="tile is-parent is-4" :key="dataItem.title">
             <article class="tile is-child">
               <data-item :item="dataItem"></data-item>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+// RENAME ME!!!
 import { Tabs, TabPane } from 'vue-bulma-tabs'
 import DataItem from '../components/DataItem'
 

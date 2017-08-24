@@ -5,11 +5,13 @@ import App from './App'
 import VueAgile from 'vue-agile'
 import 'chart.js'
 import 'hchs-vue-charts'
+import DataTable from 'v-data-table'
 
 Vue.config.productionTip = false
 
 Vue.use(window.VueCharts)
 Vue.use(VueAgile)
+Vue.use(DataTable)
 
 /* eslint-disable no-new */
 new Vue({
