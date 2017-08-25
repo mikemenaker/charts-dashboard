@@ -39,21 +39,21 @@
     <section class="section">
       <div class="container">
         <carousel v-if="carousel" :dataItems="carousel"></carousel>
-        <chart-tabs :tabs="tabs"></chart-tabs>
+        <data-tabs :tabs="tabs"></data-tabs>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import ChartTabs from './components/ChartTabs'
+import DataTabs from './components/DataTabs'
 import Carousel from './components/Carousel'
 import axios from 'axios';
 
 export default {
   name: 'app',
   components: {
-    ChartTabs,
+    DataTabs,
     Carousel
   },
   data: () => ({

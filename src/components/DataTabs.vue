@@ -16,12 +16,11 @@
 </template>
 
 <script>
-// RENAME ME!!!
 import { Tabs, TabPane } from 'vue-bulma-tabs'
 import DataItem from '../components/DataItem'
 
 export default {
-  name: 'chart-tabs',
+  name: 'data-tabs',
   components: {
     Tabs,
     TabPane,
