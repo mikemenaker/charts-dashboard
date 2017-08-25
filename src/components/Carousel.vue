@@ -4,7 +4,7 @@
             <div class="slide" v-for="dataItem in dataItems" :key="dataItem.name">
                 <div class="columns">
                     <div class="column is-4 is-offset-4">
-                        <data-item :item="dataItem"></data-item>
+                        <data-item :is-card="false" :item="dataItem"></data-item>
                     </div>
                 </div>
             </div>
