@@ -215,6 +215,12 @@
                         "Line Label 6",
                         "Line Label 7"
                     ]
+                },
+                {
+                    "title": "Table 1",
+                    "type": "table",
+                    "dataSource": "https://datasource",
+                    "updateInterval": 30
                 }
             ]
         }
