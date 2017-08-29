@@ -48,7 +48,7 @@
 <script>
 import DataTabs from './components/DataTabs'
 import Carousel from './components/Carousel'
-import axios from 'axios';
+import fetch from './data/fetch';
 
 export default {
   name: 'app',
@@ -61,11 +61,10 @@ export default {
     carousel: null
   }),
   async created() {
-    const response = await axios.get("https://raw.githubusercontent.com/mikemenaker/charts-dashboard/master/src/data.json")
-
-    this.tabs = response.data.tabs;
-    if (response.data.hasOwnProperty("carousel")) {
-      this.carousel = response.data.carousel;
+    const config = await fetch.getConfig();    
+    this.tabs = config.tabs;
+    if (config.hasOwnProperty("carousel")) {
+      this.carousel = config.carousel;
     }
   }
 }

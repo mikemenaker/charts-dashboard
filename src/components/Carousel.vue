@@ -1,19 +1,27 @@
 <template>
     <main v-if="dataItems.length > 0">
         <agile :speed="750" :timing="'linear'" :infinite="true" :autoplay="true" :pauseOnHover="false">
-            <div class="slide" v-for="dataItem in dataItems" :key="dataItem.name">
-                <div class="columns">
-                    <div class="column is-4 is-offset-4">
-                        <data-item :is-card="false" :item="dataItem"></data-item>
+            <div class="slide" v-for="dataItem in dataItems" :key="dataItem.name" style="height:50px;">                
+                <div class="tile ">
+                    <div class="tile is-parent">
+                        <article class="tile is-child is-5" >
+                            &nbsp;
+                        </article>
+                        <article class="tile is-child is-2" >
+                            <h4 class="has-text-centered">{{ dataItem.title }} </h4>
+                            <data-item :is-card="false" :item="dataItem"></data-item>
+                        </article>
+                        <article class="tile is-child is-5" >
+                            &nbsp;
+                        </article>
                     </div>
-                </div>
+                </div>              
             </div>
         </agile>
     </main>
 </template>
 
 <script>
-// limit chart size
 import DataItem from '../components/DataItem'
 
 export default {

@@ -45,7 +45,7 @@
           {{ item.description }}
         </p>
       </div>
-      <data-table class="table" v-else-if="item.type == 'table'" :data="dataset"></data-table>
+      <data-table v-else-if="item.type == 'table'" :data="dataset"></data-table>
     </div>
   </div>
 </template>
