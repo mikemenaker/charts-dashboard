@@ -80,8 +80,8 @@ export default {
   },
 
   methods: {
-    fetchData() {
-      this.dataset = fetch.getData(this.item.type, this.item.dataSource, this.item.labels);      
+    async fetchData() {      
+      this.dataset = await fetch.getData(this.item.dataSource);      
       this.lastUpdate = new Date().toUTCString();
     }
   }
