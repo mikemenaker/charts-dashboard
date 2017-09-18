@@ -2,8 +2,7 @@ import axios from 'axios';
 
 export default {
     async getData(url) {        
-        const data = await axios.get(url);
-        console.log(JSON.stringify(data.data.data));
+        const data = await axios.get(url);        
         return data.data.data;
     },
     async getConfig() {        

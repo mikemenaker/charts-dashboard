@@ -1,6 +1,6 @@
 <template>
     <main v-if="dataItems.length > 0">
-        <agile :speed="750" :timing="'linear'" :infinite="true" :autoplay="true" :pauseOnHover="false">
+        <agile :autoplay="true" :fade="true">
             <div class="slide" v-for="dataItem in dataItems" :key="dataItem.name" style="height:50px;">                
                 <div class="tile ">
                     <div class="tile is-parent">
