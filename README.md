@@ -2,6 +2,11 @@
 
 > Data driven charts dashboard
 
+![Alt text](https://ibin.co/3bAsILgThioi.gif "Dashboard")
+
+
+Relies on https://github.com/mikemenaker/mock-data-service for mock data
+
 ## Build Setup
 
 ``` bash
